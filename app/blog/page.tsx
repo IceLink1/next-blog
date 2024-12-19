@@ -23,13 +23,13 @@ export default async function Blog() {
   return (
     <>
       <h1>Blog page</h1>
-      <ul>
+      <ol>
         {posts.map((post: any) => (
           <li key={post.id}>
             <Link href={`/blog/${post.id}`}>{post.title}</Link>
           </li>
         ))}
-      </ul>
+      </ol>
     </>
   );
 }
